@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  djangoapp:
+    build:
+      context: ./
+      dockerfile: ./testapp/Dockerfile
+      target: base
+    restart: always
+    environment:
+      - REQUIRED_SETTING=${DJANGO_REQUIRED_SETTING}
+    # volumes:
+    #   - ./:/home/web/code
+    ports:
+      - 8000:8000
+

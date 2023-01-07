@@ -39,7 +39,7 @@ jobs:
       run: 'sudo npm install -g aws-cdk-lib@2.59.0'
 
     - name: Synth
-      run: 'cdk synth'
+      run: 'npm run build && cdk synth'
       working-directory: mtfic_cdk
 
     - name: Deploy

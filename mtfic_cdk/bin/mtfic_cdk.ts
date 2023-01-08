@@ -9,6 +9,7 @@ const app = new cdk.App();
 // // Creating an S3 bucket stack
 // new S3BucketStack(app, 'mtficBucketStack');
 
-new MtficEcsStack(app, 'mtficECSStack');
+// new MtficEcsStack(app, 'mtficECSStack');
 
 
+const loadBalancedFargateService = new MtficEcsStack(app, 'mtficECSStack');

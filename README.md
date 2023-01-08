@@ -31,3 +31,4 @@ Directory ./mtfic_cdk: Contains IaC using cdk typescript
 * python venv when building
 * SSL enable
 * Integrate OpenID connect to github actions to authenticate
+* Adding necessary branch protection rules in github

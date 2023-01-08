@@ -8,3 +8,8 @@ const app = new cdk.App();
 
 
 const loadBalancedFargateService = new MtficEcsStack(app, 'mtficECSStack');
+
+// loadBalancedFargateService.targetGroup.configureHealthCheck({
+//     path: "/health",
+//     unhealthyThresholdCount: 5,
+// });

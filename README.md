@@ -8,3 +8,6 @@
 ## Docker commands
         docker-compose up --build
         docker-compose down
+
+Directory ./code : Contains Django code & dockerfiles
+Directory ./mtfic_cdk: Contains IaC using cdk typescript
